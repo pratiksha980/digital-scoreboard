@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  /* while using flexbox on body take margin 0 */
+}
+.main {
+  position: relative;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  height: 300px;
+  align-items: center;
+  background-color: #172041;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 4px 4px 30px black;
+}
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+button:hover {
+  background-color: #2a3a72;
+  cursor: pointer;
+}
+@font-face {
+  src: url("TickingTimebombBB.ttf") format("truetype");
+  font-family: "TickingTimebombBB";
+}
+@font-face {
+  src: url("Roboto-Bold.ttf") format("truetype");
+  font-family: "Roboto-Bold";
+}
+h2 {
+  font-family: "Roboto-Bold";
+  font-size: xx-large;
+  color: white;
+  margin: 0;
+}
+.btn-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.score {
+  width: 150px;
+  background-color: #010001;
+  color: #f94f6d;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+span {
+  position: relative;
+  top: 6px;
+  font-family: "TickingTimebombBB";
+  font-size: 100px;
+}
+button {
+  background-color: #172041;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 0;
+}
+button:active {
+  transform: scale(0.95);
+}
+.reset-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#reset-btn {
+  background-color: transparent;
+  border: 2px solid #9aabd8;
+  color: #9aabd8;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0;
+  transition: all 0.2s;
+}
+
+#reset-btn:hover {
+  background-color: #9aabd8;
+  color: #172041;
+}
